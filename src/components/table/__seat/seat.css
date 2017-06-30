@@ -1,0 +1,67 @@
+.pl-seat-wrapper {
+  width: 10vmax;
+  height: 10vmax;
+  overflow: visible;
+  position: relative;
+}
+
+.pl-seat-cards {
+  /*position: relative;*/
+  z-index: 1;
+  width: 80%;
+  /* 12 vmin */
+  height: 80%;
+  margin: 0 auto;
+}
+
+.pl-seat-card {
+  position: relative;
+  display: block;
+  width: 70%;
+  /* 8.4 vmin */
+  height: 100%;
+}
+
+.pl-seat-card:hover {
+  cursor: pointer;
+  transition: all 0.1s ease;
+  padding-top: 2%;
+}
+
+.pl-seat-card-left {
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.pl-seat-card-right {
+  z-index: 2;
+  top: -100%;
+  /* 40% * 70% */
+  left: 28%;
+}
+
+.pl-seat-panel {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  height: 45%;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #e8f4f8 0%, #86c4d5 100%);
+  font-size: 0.75vmax;
+  text-align: center;
+}
+
+.pl-seat-nickname {
+  font-size: 1.25em;
+}
+
+.pl-seat-bank {
+  font-size: 1em;
+}
+
+.pl-seat.splitter {
+  position: absolute;
+  top: 50%;
+}

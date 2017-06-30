@@ -1,0 +1,9 @@
+.table-wrapper {
+  /* This this centers table at the body */
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  top: calc(50% - 40vh);
+  left: calc(50% - 40vw);
+  border: 3px solid black;
+}

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import PlayerSeat from './components/PlayerSeat';
+import Table from './components/table/table';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <PlayerSeat />
+      <Table />
     );
   }
 }
