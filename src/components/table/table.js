@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './table.css';
 import PlayerSeat from './__seat/seat';
+import TableCards from './__table-cards/table-cards';
 
 const example = {
   nickname: 'shook',
@@ -21,14 +22,15 @@ class Table extends Component {
     render() {
         return (
           <div className="table-wrapper">
-            <div className="table-background">
+              <TableCards />
+              <div className="table-seats-wrapper">
               <PlayerSeat info={example} />
               <PlayerSeat info={example} />
               <PlayerSeat info={example} />
               <PlayerSeat info={example} />
               <PlayerSeat info={example} />
               <PlayerSeat info={example} />
-            </div>
+              </div>
           </div>
         )
     }
