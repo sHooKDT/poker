@@ -1,4 +1,4 @@
-.table-shared-wrapper {
+.sharedWrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.table-shared-card {
+.sharedCard {
   height: 8vw;
   margin: 0.2vw;
 }
