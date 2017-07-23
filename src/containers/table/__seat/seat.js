@@ -8,13 +8,13 @@ function PlayerSeat(props) {
   return (
     <div className="table-seat pl-seat-wrapper">
       <div className="pl-seat-cards">
-        <Card className="pl-seat-card" show data={props.data.hand.first} />
-        <Card className="pl-seat-card" show data={props.data.hand.second} />
+        <Card className="pl-seat-card" show data={props.data.cards[0]} />
+        <Card className="pl-seat-card" show data={props.data.cards[1]} />
       </div>
       <div className="pl-seat-panel">
         <h1 className="pl-seat-nickname">{props.data.nickname}</h1>
         <hr className="pl-seat-splitter" />
-        <h2 className="pl-seat-bank">{props.data.pot}$</h2>
+        <h2 className="pl-seat-bank">{props.data.chips}$</h2>
       </div>
     </div>
   );

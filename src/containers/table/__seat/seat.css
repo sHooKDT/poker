@@ -25,7 +25,7 @@
 .pl-seat-card:hover {
   cursor: pointer;
   transition: all 0.1s ease;
-  padding-top: 2%;
+  transform: translateY(-5%);
 }
 
 .pl-seat-card:nth-child(1) {

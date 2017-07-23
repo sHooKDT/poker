@@ -1,27 +1,42 @@
 const initialState = {
-  type: 'holdem',
   seats_count: 6,
+  pot: 100,
+  actions_available: {
+    fold: false,
+    check: true,
+    raise: false,
+    call: true,
+  },
+  restrictions: {
+    min: 4000,
+    max: 4200,
+    step: 1,
+  },
   table_cards: [
     {
-      suit: 'S',
-      quality: 'Q',
+      suit: 's',
+      rank: 'T',
     },
   ],
   players: [
     {
-      nickname: 'shook',
-      pot: 1000,
-      status: 'in-game',
-      hand: {
-        first: {
-          suit: 'C',
-          quality: 'K',
+      you: true,
+      seat: 1,
+      nickname: 'vovan',
+      chips: 900,
+      bet: 100,
+      dealer: false, // true
+      status: 'active', // fold, all-in, active, call, check, raise, bet
+      cards: [
+        {
+          suit: 'c',
+          rank: 'K',
         },
-        second: {
-          suit: 'D',
-          quality: '8',
+        {
+          suit: 'd',
+          rank: '8',
         },
-      },
+      ],
     },
   ],
 };

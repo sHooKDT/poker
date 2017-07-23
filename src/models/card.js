@@ -1,23 +1,23 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const CardPropTypes = {
   show: PropTypes.bool.isRequired,
   data: PropTypes.shape({
     suit: PropTypes.string,
-    quality: PropTypes.string,
+    rank: PropTypes.string,
   }),
 };
 
-function createCard(show = false, suit = '', quality = '') {
+function createCard(show = false, suit = '', rank = '') {
   if (show) {
     return {
       suit,
-      quality,
+      rank,
     };
   }
 
   return {};
 }
 
-export { createCard }
-export default CardPropTypes
+export { createCard };
+export default CardPropTypes;

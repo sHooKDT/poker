@@ -3,12 +3,9 @@ import CardPropTypes from './card';
 
 const PlayerSeatPropTypes = {
   nickname: PropTypes.string.isRequired,
-  pot: PropTypes.number,
+  chips: PropTypes.number,
   status: PropTypes.string.isRequired,
-  hand: PropTypes.shape({
-    first: PropTypes.shape(CardPropTypes),
-    second: PropTypes.shape(CardPropTypes),
-  }),
+  cards: PropTypes.arrayOf(PropTypes.shape(CardPropTypes)),
 };
 
 export default PlayerSeatPropTypes;

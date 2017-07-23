@@ -3,7 +3,7 @@ import CardPropTypes, { createCard } from '../../../models/card';
 
 const Card = (props) => {
   let url;
-  if (props.show) url = `${process.env.PUBLIC_URL}/cards-svg/${props.data.quality}${props.data.suit}.svg`;
+  if (props.show) url = `${process.env.PUBLIC_URL}/cards-svg/${props.data.rank}${props.data.suit}.svg`;
   else url = `${process.env.PUBLIC_URL}/cards-svg/backside.svg`;
   return (
     <img
