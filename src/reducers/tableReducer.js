@@ -1,3 +1,5 @@
+import { UPDATE_TABLE_STATE } from '../actions/data-actions';
+
 const initialState = {
   seats_count: 6,
   pot: 100,
@@ -41,6 +43,11 @@ const initialState = {
   ],
 };
 
-export default function (state = initialState) {
-  return state;
+export default function (state = initialState, action) {
+  switch (action.type) {
+    case UPDATE_TABLE_STATE:
+      return { ...state, ...action.payload };
+    default:
+      return state;
+  }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Table from './table/table';
 
 class App extends Component {
@@ -9,4 +10,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect()(App);
