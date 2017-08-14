@@ -8,7 +8,9 @@ const CardPropTypes = {
   }),
 };
 
-function createCard(show = false, suit = '', rank = '') {
+export default CardPropTypes;
+
+export function createCard(show = false, suit = '', rank = '') {
   if (show) {
     return {
       suit,
@@ -18,6 +20,3 @@ function createCard(show = false, suit = '', rank = '') {
 
   return {};
 }
-
-export { createCard };
-export default CardPropTypes;
