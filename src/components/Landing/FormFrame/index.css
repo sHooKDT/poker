@@ -1,0 +1,38 @@
+.frame-form {
+  height: 50%;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: Roboto, sans-serif;
+
+  background: #4caf50;
+}
+
+.frame-form > input {
+  width: 25%;
+  height: 15%;
+
+  margin: 1%;
+  padding-left: 1%;
+
+  font-size: 100%;
+
+  border: 0;
+  border-radius: 999px;
+  background: hsla(0, 0%, 100%, 0.35);
+}
+
+.frame-form > input:focus {
+  outline: 0;
+  background: hsla(0, 0%, 100%, 0.60);
+}
+
+.frame-form > input[type=submit] {
+  width: 15%;
+  cursor: pointer;
+}

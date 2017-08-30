@@ -1,0 +1,34 @@
+.stack-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.stack-frame {
+  position: static;
+
+  width: 100%;
+  height: auto;
+
+  padding: 5%;
+}
+
+.frame-red {
+  background: red;
+  color: white;
+}
+
+.frame-blue {
+  background: blue;
+  color: black;
+}
+
+.frame-50h {
+  height: 50%;
+}

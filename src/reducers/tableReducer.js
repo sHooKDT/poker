@@ -1,47 +1,7 @@
 import { UPDATE_TABLE_STATE } from '../actions/data-actions';
+import Table10x from '../examples/table-10x-redux';
 
-const initialState = {
-  seats_count: 6,
-  pot: 100,
-  actions_available: {
-    fold: false,
-    check: true,
-    raise: false,
-    call: true,
-  },
-  restrictions: {
-    min: 4000,
-    max: 4200,
-    step: 1,
-  },
-  table_cards: [
-    {
-      suit: 's',
-      rank: 'T',
-    },
-  ],
-  players: [
-    {
-      you: true,
-      seat: 1,
-      nickname: 'vovan',
-      chips: 900,
-      bet: 100,
-      dealer: false, // true
-      status: 'active', // fold, all-in, active, call, check, raise, bet
-      cards: [
-        {
-          suit: 'c',
-          rank: 'K',
-        },
-        {
-          suit: 'd',
-          rank: '8',
-        },
-      ],
-    },
-  ],
-};
+const initialState = Table10x;
 
 export default function (state = initialState, action) {
   switch (action.type) {
